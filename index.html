@@ -1,11 +1,59 @@
 <html>
-<body bgcolor = "gray">
-<h1 style="font-color:yellow;font-family:Trebuchet MS">
-Welcome!
-</h1>
-<p style="font-family:Trebuchet MS;">
-This is a website!
-</p>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="scripts.js" type="text/javascript"></script>
+  <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded|Forum|Ovo|Rambla" rel="stylesheet">
+</head>
+<body>
+<div class='container'>
+<div class="headings">
+  <div>Ashwin Chetty</div>
+  <div>[id] [at] [schoolname] [dot] [domain]</div>
+  <div>A humble repository of my personal and class projects</div>
+</div>
 
+<ul>
+  <li>
+    <h3>Implementing an Efficient Continuous 3D Median Filter, Class Project: Computer Architecture (2017)</h3>
+    <div>
+      Several approaches are discussed in implementing a 3D median filter without the use of histograms. We find that while binary trees provide theoretically faster insertion and deletion operations, these asymptotic benefits are outweighed in hardware by the costs of their relatively random memory access patterns, which lead to a high level of cache inefficiency. A better approach (not discussed in the paper) would be to use the <b>huang</b> algorithm with a <a href='https://stackoverflow.com/a/15319593'>"median heap"</a>, which is simpler to rebalance than a binary tree, and has much more predictable memory access patterns when traversing from child to parent, while still allowing for O(1) median calculation. Node replacement would still be computable in logarithmic time, and, for each pixel, O(n<sup>2</sup> log n) array swap operations would need to be performed, compared with O(n<sup>3</sup>) for the Quickselect method shown. 
+    </div>
+    <!-- <img src='https://www.mathgoodies.com/sites/all/modules/custom/lessons/images/graphs/line_example4.jpg'> -->
+  </li>
+  <li>
+    <h3>"There's Nothing Wrong With Looking at Boats", Class Project: Usable Security and Privacy (2017)</h3>
+    <div>
+      We ran an expository study on user response to the advertisements that they receive through standard <a href='https://pdfs.semanticscholar.org/db4c/502bafef23e7d8b1de60d628c952a4780acc.pdf'>Online Behavioral Advertising</a> techniques. We find that, in most cases, internet users prefer to receive advertisements that correctly describe their behavior, and dislike it when they do not. (eg. boating enthusiasts do not mind seeing advertisements about boats, and gambling enthusiasts do not mind seeing advertisements about gambling, but a person who does not drink would prefer not to see ads about alcohol). However, this trend is significantly and consistently reversed when these advertisements are viewed by their employers. When a person's served advertisements are visible to their employer, they prefer to be <i>misrepresented</i> by the advertisement, regardless of the sensitivity of the advertisement served. For example, a boating enthusiast would feel uncomfortable if an employer saw them receive an advertisement for boats. 
+    </div>
+  </li>
+  <li>
+    <h3>Water Refraction, Class Project: Game Construction (2017)</h3>
+    <div>
+      Lorem ipsum
+    </div>
+  </li>
+  <li>
+    <h3>Navigating Robots in Human Environments: University of Minnesota (2013)</h3>
+    <div>
+      Lorem ipsum
+    </div>
+  </li>
+  <li>
+    <h3>3D Room Reconstruction with the Microsoft Kinect: Carleton College (2013)</h3>
+    <div>
+      Lorem ipsum
+    </div>
+  </li>
+  <li>
+    <h3>Underwater flying boids. Swarm intelligence simulation with paper airplanes (2012)</h3>
+    <div>
+      A demonstration of <a href='https://en.wikipedia.org/wiki/Boids'>boids</a>: simulated bird-like objects that exhibit simple flocking behavior. This example demonstrates fish-oids, which reproduce and flock toward food sources. Foids die of starvation if they run out of food, and reproduce if they can secure enough food. Foid offspring maintain appearance and behavior similar to those of their parents. Food sources regularly respawn. Written in C++, OpenGL/GLSL.
+    </div>
+  </li>
+</ul>
+
+</div>
 </body>
 </html>
