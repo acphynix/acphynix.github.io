@@ -8,6 +8,8 @@ html {
 }
 
 body {
+  padding-top:20%;
+  font-size:150%;
   text-align:center;
   background-color:#303030;
   display: table-cell;
@@ -17,8 +19,24 @@ body {
   text-align:center;
   padding:1em;
   color:#eaeaea;
-  /*width:50%;*/
-  width:1000px;
+}
+@media (min-width: 1000px){
+  .container{
+    width:800;
+  }
+}
+@media (min-width: 1500px){
+  .container{
+    width:1200;
+  }
+  body{
+    text-align:center;
+  }
+}
+@media (max-width: 400px){
+  .container{
+    width:auto;
+  }
 }
 
 ul{
