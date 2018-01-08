@@ -98,10 +98,10 @@ li{
 }
 
 .headings div:nth-child(3){
-
+  color:white;
 }
-.headings div:nth-child(3):after{
-  content:'...';
+.headings div:nth-child(3):visited{
+  color:white;
 }
 .headings div:nth-child(4){
   padding-top:0.5em;
