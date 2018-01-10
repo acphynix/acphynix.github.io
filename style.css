@@ -53,6 +53,15 @@ ul a{
 li > a{
   text-decoration: none;
 }
+li:hover a{
+  color:#9aeaea;
+
+  -o-transition:color 0.2s ease;
+  -ms-transition:color 0.2s ease;
+  -moz-transition:color 0.2s ease;
+  -webkit-transition:color 0.2s ease;
+  transition:color 0.2s ease;
+}
 li:hover{
   background-color:#3a3a3a;
   border-bottom: 1px solid white;
