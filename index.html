@@ -6,6 +6,7 @@
   <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded|Forum|Ovo|Rambla" rel="stylesheet">
 </head>
+
 <body>
 <div class='container'>
 <div class="headings">
@@ -20,7 +21,6 @@
     <div>
       Several approaches are discussed in implementing a 3D median filter without the use of histograms. We find that while binary trees provide theoretically faster insertion and deletion operations, these asymptotic benefits are outweighed in hardware by the costs of their relatively random memory access patterns, which lead to a high level of cache inefficiency. A better approach (not discussed in the paper) would be to use the <b>huang</b> algorithm with a <a href='https://stackoverflow.com/a/15319593'>"median heap"</a>, which is simpler to rebalance than a binary tree, and has much more predictable memory access patterns when traversing from child to parent, while still allowing for O(1) median calculation. Node replacement would still be computable in logarithmic time, and, for each pixel, O(n<sup>2</sup> log n) array swap operations would need to be performed, compared with O(n<sup>3</sup>) for the Quickselect method shown. 
     </div>
-    <!-- <img src='https://www.mathgoodies.com/sites/all/modules/custom/lessons/images/graphs/line_example4.jpg'> -->
   </li>
   <li>
     <a href='paper-ads.pdf'>
